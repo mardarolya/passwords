@@ -1,0 +1,22 @@
+include mixins/_mixin.jade
+
+doctype html
+html(lang="en", ng-app="TestPassword")
+	head
+		meta(charset="UTF-8")
+		meta(name="viewport", content="width=device-width,initial-scale=1.0,maximum-scale=1")
+		+link_style("style/bootstrap.min.css")
+		+link_style("style/bootstrap-responsive.min.css")
+		+link_style("style/password.css")
+		title Passwords
+	body
+		div(ui-view)
+
+		+script_src("script/angular.min.js")
+		+script_src("script/angular-ui-router.min.js")
+		+script_src("script/password.js")
+		+script_src("views/password-start/password-start.js")
+		+script_src("views/password-list/password-list.js")
+		+script_src("views/password-edit/password-edit.js")
+
+						
